@@ -1,4 +1,4 @@
-package lecture;
+package lecture01_String;
 
 import java.util.*;
 
