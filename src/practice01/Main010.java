@@ -1,16 +1,12 @@
-package lecture01_String;
+package practice01;
 
 import java.util.Scanner;
 
-public class Main10 {
+/**
+ * [가장 짧은 문자] - isDigit // ASCII Code
+ */
+public class Main010 {
 
-    /**
-     * 가장 짧은 문자거리
-     * 왼쪽의 타켓과의 거리를 구함.
-     * 오른쪽의 타켓과의 거리를 구함. -> 작은 값으로 교체
-     * @param str
-     * @return
-     */
     public int[] solution(String str, char target){
         int[] result = new int[str.length()];
         int p = 1000;
@@ -35,15 +31,16 @@ public class Main10 {
             }
         }
         return result;
-    };
-    // teachermode e
+    }
+
     public static void main(String[] args) {
-        Main10 main = new Main10();
+        Main010 main = new Main010();
         Scanner input = new Scanner(System.in);
         String str = input.next();
         char target = input.next().charAt(0);
-        for(int x : main.solution(str, target)){
-            System.out.print(x+" ");
+        for(int x: main.solution(str, target)){
+            System.out.print(x + " ");
         }
     }
+
 }

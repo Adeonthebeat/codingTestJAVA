@@ -1,6 +1,5 @@
-package practice01_String;
+package practice01;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**

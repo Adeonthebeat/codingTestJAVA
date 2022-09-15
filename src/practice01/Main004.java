@@ -1,8 +1,5 @@
-package practice01_String;
+package practice01;
 
-import com.sun.tools.javac.Main;
-
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
