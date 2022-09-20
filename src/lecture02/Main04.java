@@ -3,7 +3,7 @@ package lecture02;
 import java.util.Scanner;
 
 /**
- * [피보나치 수열] -
+ * [피보나치 수열] - 공식
  */
 public class Main04 {
 
