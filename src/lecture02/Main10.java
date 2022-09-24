@@ -2,7 +2,7 @@ package lecture02;
 
 import java.util.Scanner;
 
-/** $
+/** $$$
  * [봉우리] - dx = {-1, 0, 1, 0} dy = {0, 1, 0, -1}
  */
 public class Main10 {
