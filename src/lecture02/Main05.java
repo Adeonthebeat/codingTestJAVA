@@ -2,7 +2,7 @@ package lecture02;
 
 import java.util.Scanner;
 
-/**
+/** $$
  * [소수(에라토스테네스 체)] - 배수를 찾아라!
  */
 public class Main05 {

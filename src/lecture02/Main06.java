@@ -3,7 +3,7 @@ package lecture02;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
+/** $$
  * [뒤집은 소수] - 공식(res * 10 + t)
  */
 public class Main06 {
