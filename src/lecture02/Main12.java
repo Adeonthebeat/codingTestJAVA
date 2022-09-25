@@ -16,10 +16,10 @@ public class Main12 {
                 for(int k = 0; k < m; k++) { // 수학테스트 결과
                     int pi = 0, pj = 0;
                     for(int s = 0; s < n; s++){ // 학생 수
-                        if(arr[k][s] == i){
+                        if(arr[k][s] == i){ // 학생을 찾았을 때
                             pi = s; // 순위
                         }
-                        if(arr[k][s] == j){
+                        if(arr[k][s] == j){ // 학생을 찾았을 때
                             pj = s; // 순위
                         }
                     }
