@@ -1,44 +1,44 @@
-package lecture03;
+package practice03;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
 
-/** $
- * [두 배열 합치기] - result.add(arrA[p1++]);
+/**
+ * [공통원소 구하기] -
  */
-public class Main01 {
+public class Main002 {
 
     public ArrayList<Integer> solution(int n, int[] arrA, int m, int[] arrB){
         ArrayList<Integer> result = new ArrayList<Integer>();
 
+        Arrays.sort(arrA);
+        Arrays.sort(arrB);
+
+
         int p1 = 0, p2 = 0;
 
         while(p1 < n && p2 < m){
-            if(arrA[p1] < arrB[p2]){
+            if(arrA[p1] == arrB[p2]){
                 result.add(arrA[p1++]);
+                p2++;
+            } else if(arrA[p1] < arrB[p2]){
+                p1++;
             } else {
-                result.add(arrB[p2++]);
+                p2++;
             }
-        }
-
-        while(p1 < n){
-            result.add(arrA[p1++]);
-        }
-        while(p2 < m){
-            result.add(arrB[p2++]);
         }
 
         return result;
     }
-
 /**
-3
-1 3 5
 5
-2 3 6 7 9
+1 3 9 5 2
+5
+3 2 5 7 8
 */
-
     public static void main(String[] args) {
-        Main01 main = new Main01();
+        Main002 main = new Main002();
         Scanner input = new Scanner(System.in);
 
         int n = input.nextInt();
@@ -51,8 +51,8 @@ public class Main01 {
         int m = input.nextInt();
         int[] arrB = new int[m];
 
-        for(int j = 0; j < m; j++){
-            arrB[j] = input.nextInt();
+        for(int i = 0; i < m; i++){
+            arrB[i] = input.nextInt();
         }
 
         for(int x : main.solution(n, arrA, m, arrB)){
@@ -60,5 +60,4 @@ public class Main01 {
         }
 
     }
-
 }

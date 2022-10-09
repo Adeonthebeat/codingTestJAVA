@@ -1,11 +1,12 @@
-package lecture03;
+package practice03;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
-/** $
- * [두 배열 합치기] - result.add(arrA[p1++]);
+/**
+ * [두 배열 합치기] - p1, p2
  */
-public class Main01 {
+public class Main001 {
 
     public ArrayList<Integer> solution(int n, int[] arrA, int m, int[] arrB){
         ArrayList<Integer> result = new ArrayList<Integer>();
@@ -19,7 +20,6 @@ public class Main01 {
                 result.add(arrB[p2++]);
             }
         }
-
         while(p1 < n){
             result.add(arrA[p1++]);
         }
@@ -30,15 +30,8 @@ public class Main01 {
         return result;
     }
 
-/**
-3
-1 3 5
-5
-2 3 6 7 9
-*/
-
     public static void main(String[] args) {
-        Main01 main = new Main01();
+        Main001 main = new Main001();
         Scanner input = new Scanner(System.in);
 
         int n = input.nextInt();
@@ -51,8 +44,8 @@ public class Main01 {
         int m = input.nextInt();
         int[] arrB = new int[m];
 
-        for(int j = 0; j < m; j++){
-            arrB[j] = input.nextInt();
+        for(int i = 0; i < m; i++){
+            arrB[i] = input.nextInt();
         }
 
         for(int x : main.solution(n, arrA, m, arrB)){
@@ -60,5 +53,4 @@ public class Main01 {
         }
 
     }
-
 }
