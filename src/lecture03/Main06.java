@@ -12,17 +12,18 @@ public class Main06 {
         int result = 0, cnt = 0, lt = 0;
 
         for(int rt = 0; rt < n; rt++){
-            if(arr[rt] == 0){
+            if(arr[rt] == 0){ // rt = 0이라면, cnt++
                 cnt++;
             }
-            while(cnt > k){
-                if(arr[lt] == 0){
+            while(cnt > k){ // 한줄씩 밀리면서
+                if(arr[lt] == 0){ // lt == 0 ->> cnt--
                     cnt--;
                 }
-                lt++;
+                lt++; // lt는 밀리면서 증가.
             }
-            result = Math.max(result, rt - lt + 1);
+            result = Math.max(result, rt - lt + 1); // 해당 위치가 가장 큰 값인지?
         }
+
         return result;
     }
 
