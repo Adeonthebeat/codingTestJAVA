@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * [공통원소 구하기] -
+ * [공통원소 구하기] - p1, p2
  */
 public class Main002 {
 
