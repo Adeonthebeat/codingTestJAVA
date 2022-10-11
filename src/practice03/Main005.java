@@ -3,7 +3,7 @@ package practice03;
 import java.util.Scanner;
 
 /**
- * [연속된 자연수의 합] - rt || if(sum == m){
+ * [연속된 자연수의 합] - sum -= arr[lt++];
  */
 public class Main005 {
 

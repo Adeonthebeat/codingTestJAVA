@@ -3,7 +3,7 @@ package practice03;
 import java.util.Scanner;
 
 /**
- * [연속 부분수열] - rt || if(sum == m){
+ * [연속 부분수열] - rt || sum -= arr[lt++];
  */
 public class Main004 {
 
