@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 /** $$
- * [학급 회장(해쉬)] - HashMap ||
+ * [학급 회장(해쉬)] - HashMap || HashMap.keySet() || HashMap.get(key)
  */
 public class Main01 {
 
