@@ -39,10 +39,6 @@ public class Main03 {
 7 4
 20 12 20 10 23 17 10
 */
-    /**
-     * 학급 회장(해쉬)
-     * @param args
-     */
     public static void main(String[] args) {
         Main03 main = new Main03();
         Scanner input = new Scanner(System.in);

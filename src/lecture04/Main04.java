@@ -54,10 +54,6 @@ abc
 bacaAacbaa
 abca
 */
-    /**
-     * 학급 회장(해쉬)
-     * @param args
-     */
     public static void main(String[] args) {
         Main04 main = new Main04();
         Scanner input = new Scanner(System.in);
