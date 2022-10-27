@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /** $$$
- * [크레인 인형뽑기(카카오)] - Stack || peek() || if(board[i][pos-1] != 0)
+ * [크레인 인형뽑기(카카오)] - Stack || pos : moves ||peek() || if(board[i][pos-1] != 0)
  */
 public class Main03 {
 
