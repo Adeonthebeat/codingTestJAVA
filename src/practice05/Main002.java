@@ -28,13 +28,14 @@ public class Main002 {
         return result;
     }
 
+/**
+(A(BC)D)EF(G(H)(IJ)K)LM(N)
+*/
     public static void main(String[] args) {
         Main002 main = new Main002();
         Scanner input = new Scanner(System.in);
 
-        /**
-         (A(BC)D)EF(G(H)(IJ)K)LM(N)
-         */
+
         String str = input.next();
 
         System.out.println(main.solution(str));
