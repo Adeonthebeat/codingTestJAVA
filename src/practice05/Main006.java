@@ -3,7 +3,7 @@ package practice05;
 import java.util.*;
 
 /** $$$
- * [쇠막대기] - 우선 push || 우선 pop || i-1 ||size
+ * [공주 구하기] - Queue || offer || offer(poll()) || poll()
  */
 public class Main006 {
 
