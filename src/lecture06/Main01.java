@@ -9,9 +9,9 @@ public class Main01 {
 
     public int[] solution(int n, int[] arr){
 
-        for(int i = 0; i < n; i++){
+        for(int i = 0; i < n-1; i++){
             int idx = i;
-            for(int j = i + 1; j < n; j++){
+            for(int j = i+1; j < n; j++){
                 if(arr[j] < arr[idx]){
                     idx = j;
                 }
@@ -24,10 +24,10 @@ public class Main01 {
         return arr;
     }
 
-/**
-6
-13 5 11 7 23 15
-*/
+    /**
+     6
+     13 5 11 7 23 15
+     */
 
 
     public static void main(String[] args) {
