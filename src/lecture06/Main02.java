@@ -3,23 +3,21 @@ package lecture06;
 import java.util.Scanner;
 
 /**
- * [선택 정렬] - 2중 for문 | idx | i+1 | Swap(arr[i])
+ * [버블 정렬] - 2중 for문 | n-i-1
  */
-public class Main01 {
+public class Main02 {
 
     public int[] solution(int n, int[] arr){
 
         for(int i = 0; i < n-1; i++){
-            int idx = i;
-            for(int j = i+1; j < n; j++){
-                // 선택함
-                if(arr[j] < arr[idx]){
-                    idx = j;
+            // 버블정렬(뒤에서부터)
+            for(int j = 0; j < n-i-1; j++){
+                if(arr[j] > arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
                 }
             }
-            int temp = arr[i];
-            arr[i] = arr[idx];
-            arr[idx] = temp;
         }
 
         return arr;
@@ -32,7 +30,7 @@ public class Main01 {
 
 
     public static void main(String[] args) {
-        Main01 main = new Main01();
+        Main02 main = new Main02();
         Scanner input = new Scanner(System.in);
 
         int n = input.nextInt();
