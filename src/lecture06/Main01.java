@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Main01 {
 
-    public int[] solution(int n, int[] arr){
+    public int[] solution(int n, int[] arr) {
 
         for(int i = 0; i < n-1; i++){
             int idx = i;
