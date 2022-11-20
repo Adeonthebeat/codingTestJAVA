@@ -2,8 +2,8 @@ package lecture06;
 
 import java.util.*;
 
-/**
- * [중복 확인] - HashMap |
+/** $
+ * [중복 확인] - HashMap | arr[i] = arr[i+1]
  */
 public class Main05 {
 
