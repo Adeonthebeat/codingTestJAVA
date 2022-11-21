@@ -1,8 +1,6 @@
 package lecture06;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * [장난꾸러기] - 정렬
