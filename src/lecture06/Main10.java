@@ -13,7 +13,7 @@ public class Main10 {
         int endPoint = arr[0];
 
         for(int i = 1; i < arr.length; i++){
-            if(arr[i]-endPoint >= distance){
+            if(arr[i] - endPoint >= distance){
                 cnt++;
                 endPoint = arr[i];
             }
@@ -28,9 +28,11 @@ public class Main10 {
 
         Arrays.sort(arr);
 
-        int lt = 1;
-        int rt = arr[n-1];
+        // 두 말의 최소 거리 = 1 | 두 말의 거리는 최대값
+        int lt = 1;         // 최소값
+        int rt = arr[n-1];  // 최대값
 
+        // 두 말의 최대 거리를 두고 말을 카운트
         while(lt <= rt){
             int mid = (lt + rt) / 2;
             if(count(arr, mid) >= k){
@@ -44,10 +46,10 @@ public class Main10 {
         return result;
     }
 
-/**
-5 3
-1 2 8 4 9
-*/
+    /**
+     5 3
+     1 2 8 4 9
+     */
 
 
     public static void main(String[] args) {
