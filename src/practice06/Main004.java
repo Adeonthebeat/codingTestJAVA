@@ -3,7 +3,7 @@ package practice06;
 import java.util.Scanner;
 
 /** $$$$$
- * [Least Recently Used] -
+ * [Least Recently Used] - pos = -1 | Hit Check | Miss => size -1 -> 1 | Hit => pos -> 1 | cache[0] = x
  */
 public class Main004 {
 
@@ -36,8 +36,6 @@ public class Main004 {
             // 첫번째 자리
             cache[0] = x;
         }
-
-
         return cache;
     }
 
