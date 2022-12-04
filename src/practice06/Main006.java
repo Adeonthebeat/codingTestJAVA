@@ -3,7 +3,7 @@ package practice06;
 import java.util.*;
 
 /** $$
- * [장난꾸러기] -
+ * [장난꾸러기] - 정렬
  */
 public class Main006 {
 
