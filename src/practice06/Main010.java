@@ -1,12 +1,12 @@
-package lecture06;
+package practice06;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 /** $$$$$
- * [마구간 정하기(결정알고리즘)] - 이분검색 | 최대값 찾기 | Target값을 몇마리로 배치할 수 있는지 | mid = (lt + rt) / 2 | stream(arr).max().getAsInt()
+ * [마구간 정하기(결정알고리즘)] - count Method | endPoint | 거리가 멀면 lt = mid + 1
  */
-public class Main10 {
+public class Main010 {
 
     /**
      * 말의 마리 수를 구하는 함수
@@ -15,13 +15,12 @@ public class Main10 {
      * @return
      */
     public int count(int[] arr, int distance){
-        int cnt = 1;
+
+        int cnt = 1;    // 말의 마리 수
         int endPoint = arr[0];
 
-        // endPoint 제외
         for(int i = 1; i < arr.length; i++){
-            // 현재값에서 endPoint 뺀 값이 Target보다 크다면.
-            if(arr[i] - endPoint >= distance){
+            if((arr[i] - endPoint) >= distance){
                 cnt++;
                 endPoint = arr[i];
             }
@@ -30,7 +29,8 @@ public class Main10 {
         return cnt;
     }
 
-    public int solution(int n, int k, int[] arr){
+
+    public int solution(int n, int distnace, int[] arr){
 
         int result = 0;
 
@@ -43,7 +43,8 @@ public class Main10 {
         // 두 말의 최대 거리를 두고 말을 카운트
         while(lt <= rt){
             int mid = (lt + rt) / 2;
-            if(count(arr, mid) >= k){
+
+            if(count(arr, mid) >= distnace){
                 result = mid;
                 lt = mid + 1;
             } else {
@@ -59,20 +60,20 @@ public class Main10 {
      1 2 8 4 9
      */
 
-
     public static void main(String[] args) {
-        Main10 main = new Main10();
+        Main010 main = new Main010();
         Scanner input = new Scanner(System.in);
 
-        int n = input.nextInt(); // 마굿간의 좌표
-        int k = input.nextInt(); // 가능한 말의 개수
+        int n = input.nextInt();    // 개수
+        int target = input.nextInt();
         int[] arr = new int[n];
 
         for(int i = 0; i < n; i++){
             arr[i] = input.nextInt();
         }
 
-        System.out.println(main.solution(n, k, arr));
+        System.out.println(main.solution(n, target, arr));
 
     }
+
 }
