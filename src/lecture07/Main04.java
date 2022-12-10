@@ -3,7 +3,7 @@ package lecture07;
 import java.util.Scanner;
 
 /** $$$$
- * [피보나치 수열] -
+ * [피보나치 수열] - fibo[n] > 0 | for문 > Stack => Stack Frame이 많이 생김
  */
 public class Main04 {
 
@@ -12,6 +12,7 @@ public class Main04 {
 
     public int DFS(int n){
 
+        // 가장 중요함!
         if(fibo[n] > 0){
             return fibo[n];
         }
