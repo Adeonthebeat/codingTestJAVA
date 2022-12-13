@@ -27,11 +27,11 @@ public class Main07 {
         int L = 0;
         while(!Q.isEmpty()){
             int len = Q.size();
-            System.out.print(L + " : ");
+            System.out.print(L +" : ");
             for(int i = 0; i < len; i++){
                 NodeBFS current = Q.poll();
                 System.out.print(current.data + " ");
-
+                // root 왼쪽
                 if(current.lt != null){
                     Q.offer(current.lt);
                 }
