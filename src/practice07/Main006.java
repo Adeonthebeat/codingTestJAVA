@@ -14,11 +14,13 @@ public class Main006 {
         if(L == n+1) {
             String temp = "";
             for(int i = 1; i <= n; i++) {
-                if(ch[i] == 1) {
+
+                // 체크 중요!
+                if(ch[i] == 1){
                     temp += (i + " ");
                 }
             }
-            if(temp.length() > 0) {
+            if(temp.length() > 0){
                 System.out.println(temp);
             }
         } else {
@@ -29,15 +31,14 @@ public class Main006 {
         }
     }
 
-
     public static void main(String[] args) {
         Main006 main = new Main006();
 
-        n = 3;
-        ch = new int[n+1];
+       n = 3;
 
-        main.DFS(1);
+       ch = new int[n+1];
 
+       main.DFS(1);
 
     }
 }
