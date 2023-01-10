@@ -1,7 +1,7 @@
 package practice07;
 
 /** $$
- * [부분집합 구하기(DFS)] -
+ * [부분집합 구하기(DFS)] - 사용/미사용(DFS)
  */
 public class Main006 {
 
@@ -12,6 +12,7 @@ public class Main006 {
     public void DFS(int L) {
         // n = 3일 떄, 4와 같다면
         if(L == n+1) {
+            // 출력
             String temp = "";
             for(int i = 1; i <= n; i++) {
 
@@ -24,6 +25,7 @@ public class Main006 {
                 System.out.println(temp);
             }
         } else {
+            // DFS
             ch[L] = 1; // 사용
             DFS(L+1);
             ch[L] = 0; // 미사용
