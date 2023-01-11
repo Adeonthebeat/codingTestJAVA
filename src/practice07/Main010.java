@@ -1,38 +1,36 @@
-package lecture07;
+package practice07;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
-/**
- * $$$$
+/** $$
  * [Tree 말단 노드까지의 가장 짧은 경로] - BFS
  */
-
-class Node10 {
+class Node010 {
     int data;
-    Node10 lt, rt;
-    public Node10(int val) {
+    Node010 lt, rt;
+
+    public Node010(int val) {
         data = val;
         lt = rt = null;
     }
 }
-public class Main10 {
+public class Main010 {
 
-    Node10 root;
+    Node010 root;
 
-    public int BFS(Node10 root){
+    public int BFS(Node010 root) {
 
-        Queue<Node10> Q = new LinkedList<>();
+        Queue<Node010> Q = new LinkedList<>();
 
         Q.offer(root);
 
         int Lvl = 0;
-        while(!Q.isEmpty()){
+        while(!Q.isEmpty()) {
             int len = Q.size();
-            for(int i = 0; i < len; i++) {
-                Node10 current = Q.poll();
 
-                // 가장 작은 레벨 출력
+            for(int i = 0; i < len; i++) {
+                Node010 current = Q.poll();
+
                 if(current.lt == null && current.rt == null) {
                     return Lvl;
                 }
@@ -44,23 +42,25 @@ public class Main10 {
                 if(current.rt != null) {
                     Q.offer(current.rt);
                 }
+
             }
             Lvl++;
         }
+
         return 0;
     }
 
-
     public static void main(String[] args) {
-        Main10 tree = new Main10();
+        Main010 tree = new Main010();
 
-        tree.root = new Node10(1);
-        tree.root.lt = new Node10(2);
-        tree.root.rt = new Node10(3);
-        tree.root.lt.lt = new Node10(4);
-        tree.root.lt.rt = new Node10(5);
+        tree.root = new Node010(1);
+        tree.root.lt = new Node010(2);
+        tree.root.rt = new Node010(3);
+        tree.root.lt.lt = new Node010(4);
+        tree.root.lt.rt = new Node010(5);
 
         System.out.println(tree.BFS(tree.root));
+
 
     }
 }
