@@ -36,6 +36,10 @@ public class Main01 {
         }
     }
 
+/**
+6
+1 3 5 6 7 10
+*/
     public static void main(String[] args) {
         Main01 main = new Main01();
         Scanner input = new Scanner(System.in);
