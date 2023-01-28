@@ -3,7 +3,7 @@ package lecture08;
 import java.util.Scanner;
 
 /**
- * [중복순열 구하기] -
+ * [중복순열 구하기] - for문 들어간 부분집합
  */
 public class Main04 {
 
