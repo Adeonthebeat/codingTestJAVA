@@ -24,10 +24,10 @@ public class Main07 {
 
     }
 
-/*
-5 3
-33 19
-*/
+    /*
+    5 3
+    33 19
+    */
     public static void main(String[] args) {
         Main07 main = new Main07();
         Scanner input = new Scanner(System.in);
