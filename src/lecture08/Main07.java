@@ -15,7 +15,7 @@ public class Main07 {
             return dy[n][r];
         }
 
-        // 조합이 1일 떼!
+        // 조합이 1(n = r)이거나 r = 0 일 때
         if(n == r || r == 0) {
             return 1;
         } else {
