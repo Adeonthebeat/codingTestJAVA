@@ -8,11 +8,9 @@ import java.util.Scanner;
 public class Main13 {
 
     static int n, result;
-
     static int[] ch;
-
-    static int[] dx = {-1, -1, 0, 1, 1, 1, 0, -1};
-    static int[] dy = {0, 1, 1, 1, 0, -1, -1, -1};
+    static int[] dx = {-1, -1, 0, 1, 1, 1, 0, -1}; // 시계방향
+    static int[] dy = {0, 1, 1, 1, 0, -1, -1, -1}; // 시계방향
 
     public void DFS(int x, int y, int[][] board) {
         for(int i = 0; i < 8; i++) {
