@@ -13,6 +13,12 @@ public class Main002 {
 
     static int[] arr;
 
+    /**
+     *
+     * @param L     = Level
+     * @param sum   = 총합
+     * @param arr   = 무게
+     */
     public void DFS(int L, int sum, int[] arr) {
 
         // 총 합이 트럭 무게보다 무겁다면, 의미 없음
@@ -29,12 +35,12 @@ public class Main002 {
         }
     }
 
-/**
-259 5
-81
-58
-42 33 61
-*/
+    /**
+     259 5
+     81
+     58
+     42 33 61
+     */
     public static void main(String[] args) {
         Main002 main = new Main002();
         Scanner input = new Scanner(System.in);
