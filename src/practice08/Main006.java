@@ -1,43 +1,38 @@
-package lecture08;
+package practice08;
 
 import java.util.Scanner;
 
-/**
- * [순열 구하기] - 체크의 기준은 n! | pm[L] = arr[i];
+/** $$
+ * [순열 구하기] - DFS | 경우의 수 | n! | pm[L] = arr[i];
  */
-public class Main06 {
+public class Main006 {
 
     static int n, m;
-
-    static int[] pm, ch, arr;
+    static int[] arr, ch, pm;
 
     public void DFS(int L) {
-        // 2개라면.
         if(L == m) {
             for(int x : pm) {
-                System.out.print(x +" ");
+                System.out.print(x + " ");
             }
             System.out.println();
         } else {
             for(int i = 0; i < n; i++) {
-                // 중복체크
                 if(ch[i] == 0) {
-                    ch[i] = 1; // 체크
-                    pm[L] = arr[i]; // 제일 중요
+                    ch[i] = 1;
+                    pm[L] = arr[i];
                     DFS(L+1);
-                    ch[i] = 0; // 체크 풀기
+                    ch[i] = 0;
                 }
-
             }
         }
     }
-
-    /*
-    3 2
-    3 6 9
-    */
+/*
+3 2
+3 6 9
+*/
     public static void main(String[] args) {
-        Main06 main = new Main06();
+        Main006 main = new Main006();
         Scanner input = new Scanner(System.in);
 
         n = input.nextInt();
@@ -54,4 +49,5 @@ public class Main06 {
         main.DFS(0);
 
     }
+
 }
