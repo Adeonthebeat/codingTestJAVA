@@ -38,7 +38,7 @@ public class Main04 {
         int j = 0;
         // 가장 큰 날짜부터 1일까지
         for(int i = max; i >= 1; i--) {
-            for(; j <n; j++) {
+            for(; j < n; j++) {
                 // 시간대별로 쪼개기
                 if(arr.get(j).time < i){
                     break;
