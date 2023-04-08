@@ -1,35 +1,37 @@
-package lecture09;
+package practice09;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-class Edge07 implements Comparable<Edge07> {
+
+class Edge007 implements Comparable<Edge007> {
     public int v1;
     public int v2;
     public int cost;
 
-    public Edge07(int v1, int v2, int cost) {
+    public Edge007(int v1, int v2, int cost) {
         this.v1 = v1;
         this.v2 = v2;
         this.cost = cost;
     }
 
     @Override
-    public int compareTo(Edge07 o) {
-        return this.cost - o.cost; // 오름차순 정렬
+    public int compareTo(Edge007 o) {
+        // 오름차순 정렬
+        return this.cost - o.cost;
     }
 }
 /**
  * [원더랜드] - 최소스패닝트리 | 크루스칼 | Union & Find
  */
-public class Main07 {
+public class Main007 {
 
     static int[] unf;
 
     public static int find(int v) {
         if(v == unf[v]) {
-            return v;
+            return unf[v];
         } else {
             return unf[v] = find(unf[v]);
         }
@@ -38,14 +40,14 @@ public class Main07 {
     public static void union(int a, int b) {
         int fa = find(a);
         int fb = find(b);
+
         if(fa != fb) {
             unf[fa] = fb;
         }
+
     }
 
-
     /**
-
      최소비용으로 도시를 건설하라.
      정점 : 도시 | 간선 : 도로 | 간선의 비용
      최소스패닝트리 : 그래프에서 트리구조 추출
@@ -67,7 +69,7 @@ public class Main07 {
      8 9 15
      */
     public static void main(String[] args) {
-        Main07 main = new Main07();
+        Main007 main = new Main007();
         Scanner input = new Scanner(System.in);
 
         int n = input.nextInt();
@@ -75,7 +77,7 @@ public class Main07 {
 
         unf = new int[n+1];
 
-        ArrayList<Edge07> arr = new ArrayList<>();
+        ArrayList<Edge007> arr = new ArrayList<>();
 
         for(int i = 1; i <= n; i++) {
             unf[i] = i;
@@ -85,7 +87,7 @@ public class Main07 {
             int a = input.nextInt();
             int b = input.nextInt();
             int c = input.nextInt();
-            arr.add(new Edge07(a, b, c));
+            arr.add(new Edge007(a, b, c));
         }
 
         int result = 0;
@@ -93,8 +95,7 @@ public class Main07 {
         // 정렬(Cost 오름차순)
         Collections.sort(arr);
 
-        for(Edge07 ob : arr) {
-
+        for(Edge007 ob : arr) {
             int fv1 = find(ob.v1);
             int fv2 = find(ob.v2);
 
