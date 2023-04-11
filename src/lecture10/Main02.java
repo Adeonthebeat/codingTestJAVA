@@ -3,7 +3,7 @@ package lecture10;
 import java.util.Scanner;
 
 /**
- * [돌다리 건너기] - 동적계획법 |
+ * [돌다리 건너기] - 동적계획법 | 큰 문제를 작게 쪼개서 푸는 방법 | 피보나치
  */
 public class Main02 {
 
