@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * [최대 부분 증가수열] - 동적계획법 | 큰 문제를 작게 쪼개서 푸는 방법
  */
-public class Main003 {
+public class Main03 {
 
     static int[] dy;
 
@@ -37,7 +37,7 @@ public class Main003 {
 */
 
     public static void main(String[] args) {
-        Main003 main = new Main003();
+        Main03 main = new Main03();
         Scanner input = new Scanner(System.in);
 
         int n = input.nextInt();
