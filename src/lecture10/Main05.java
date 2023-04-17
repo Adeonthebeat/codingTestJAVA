@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * [동전교환] - 냅색 알고리즘 | 가장 적은 수의 동전 |
+ * [동전교환] - 냅색 알고리즘 | 가장 적은 수의 동전
  */
 public class Main05 {
 
