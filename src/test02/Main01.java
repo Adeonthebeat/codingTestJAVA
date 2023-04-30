@@ -21,10 +21,10 @@ public class Main01 {
 
         return result;
     }
-/*
-6
-7 3 9 5 6 12
-*/
+    /*
+    6
+    7 3 9 5 6 12
+    */
     public static void main(String[] args) {
         Main01 main = new Main01();
         Scanner input = new Scanner(System.in);
