@@ -19,7 +19,9 @@ public class Main04 {
 
         return result;
     }
-
+/*
+10
+*/
     public static void main(String[] args) {
         Main04 main = new Main04();
         Scanner input = new Scanner(System.in);
