@@ -21,9 +21,9 @@ public class Main05 {
         }
         return result;
     }
-/*
-20
-*/
+    /*
+    20
+    */
     public static void main(String[] args) {
         Main05 main = new Main05();
         Scanner input = new Scanner(System.in);
