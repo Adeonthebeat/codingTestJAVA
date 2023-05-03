@@ -2,6 +2,9 @@ package test02;
 
 import java.util.Scanner;
 
+/**
+ * [점수계산] - 누적
+ */
 public class Main07 {
 
     public int solution(int n, int[] arr) {
@@ -21,10 +24,10 @@ public class Main07 {
         return result;
     }
 
-/*
-10
-1 0 1 1 1 0 0 1 1 0
-*/
+    /*
+    10
+    1 0 1 1 1 0 0 1 1 0
+    */
     public static void main(String[] args) {
         Main07 main = new Main07();
         Scanner input = new Scanner(System.in);
