@@ -44,11 +44,14 @@ public class Main12 {
     public static void main(String[] args) {
         Main12 main = new Main12();
         Scanner input = new Scanner(System.in);
+
         int n = input.nextInt();
         int m = input.nextInt();
-        int[][] arr = new int[m][n]; // 1번부터 5학년까지
-        for(int i = 0; i < m; i++){ // 학생수
-            for(int j = 0; j < n; j++){ // 5학년까지
+
+        int[][] arr = new int[m][n]; // 테스트, 핟생
+
+        for(int i = 0; i < m; i++){ // 테스트 수
+            for(int j = 0; j < n; j++){ // 학생 수
                 arr[i][j] = input.nextInt();
             }
         }
