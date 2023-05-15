@@ -18,10 +18,10 @@ public class Main12 {
                     int pi = 0, pj = 0;
 
                     for(int s = 0; s < n; s++) { // 테스트 수
-                        if(arr[k][s] == i) {
+                        if(arr[k][s] == i) { // 학생을 찾았을 때
                             pi = s;
                         }
-                        if(arr[k][s] == j) {
+                        if(arr[k][s] == j) { // 학생을 찾았을 때
                             pj = s;
                         }
                     }
