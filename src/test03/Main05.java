@@ -7,15 +7,16 @@ import java.util.Scanner;
  */
 public class Main05 {
 
-    public int solution_math(int n) {
+    public int solutionMath(int n) {
         int result = 0;
 
         int cnt = 1;
         n--;
         while(n > 0) {
             cnt++;
-            n = n - cnt;
+            n = n- cnt;
             if(n % cnt == 0) {
+                System.out.println(n +" "+ cnt);
                 result++;
             }
         }
@@ -26,12 +27,12 @@ public class Main05 {
     public int solution(int n) {
         int result = 0, sum = 0, lt = 0;
 
-        int m = n/2 + 1;
+        int m = n / 2 + 1;
 
         int[] arr = new int[m];
 
         for(int i = 0; i < m; i++) {
-            arr[i] = i+1;
+            arr[i] = i + 1;
         }
 
         for(int rt = 0; rt < m; rt++) {
@@ -49,6 +50,7 @@ public class Main05 {
                 }
             }
         }
+
         return result;
     }
 /*
